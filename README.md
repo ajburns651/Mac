@@ -12,19 +12,29 @@
 
 - homebrew: a package manager for mac os
 
-```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 - iterm2: a better mac os terminal
 
-```brew install --cask iterm2```
+```
+brew install --cask iterm2
+```
 - yabai: a tiling window manager (monterey currently not supported)
 
-```open https://github.com/koekeishiya/yabai```
+```
+open https://github.com/koekeishiya/yabai
+```
 - exa: a better ls program
 
-```brew install exa```
+```
+brew install exa
+```
 - vscode: a programming editor
 
-```brew install --cask visual-studio-code```
+```
+brew install --cask visual-studio-code
+```
 - python: a programming language
 
 ```
@@ -36,16 +46,24 @@ ln -s -f /usr/local/bin/python3 /usr/local/bin/python
 
 - spotify: a music provider
 
-```brew install spotify```
+```
+brew install spotify
+```
 - todoist: a todolist application
 
-```brew install --cask todoist```
+```
+brew install --cask todoist
+```
 
 - discord: a chat service
 
-```brew install discord```
+```
+brew install discord
+```
 
 - steam: a gaming platform
 
-```brew install --cask steam```
+```
+brew install --cask steam
+```
 
