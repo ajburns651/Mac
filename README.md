@@ -24,6 +24,7 @@ brew install --cask iterm2
 
 ```
 open https://github.com/koekeishiya/yabai
+brew install yabai --HEAD
 ```
 - amethyst: my main window manager
 
@@ -71,4 +72,3 @@ brew install discord
 ```
 brew install --cask steam
 ```
-
