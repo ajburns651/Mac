@@ -25,6 +25,11 @@ brew install --cask iterm2
 ```
 open https://github.com/koekeishiya/yabai
 ```
+- amethyst: my main window manager
+
+```
+brew install --cask amethyst
+```
 - exa: a better ls program
 
 ```
