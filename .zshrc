@@ -6,7 +6,6 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 ### BINDINGS ###
-bindkey '^I' autosuggest-accept
 bindkey '^[[Z' autosuggest-execute
 
 ### ALIASES ###
