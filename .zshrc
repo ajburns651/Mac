@@ -5,6 +5,21 @@ eval "$(starship init zsh)"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
-bindkey '^[[Z' autosuggest-accept
-alias ls="exa -al --color=always --group-directories-first"
+### BINDINGS ###
+bindkey '^I' autosuggest-accept
+bindkey '^[[Z' autosuggest-execute
 
+### ALIASES ###
+alias ls="exa -al --color=always --group-directories-first"
+alias please='sudo $(fc -ln -1)'
+alias ks='ls'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias tree="tree -a"
+
+alias mkdir="mkdir -p"
+alias cp="cp -ri"
+alias mv='mv -i'
+alias rm='rm -i'
+alias yeet='rm -i'

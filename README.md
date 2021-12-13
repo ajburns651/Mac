@@ -11,13 +11,14 @@
 - hide dock icons: defaults write com.apple.finder CreateDesktop false; killall Finder
 - disable SIP: https://github.com/koekeishiya/yabai
 - System Preferences > auto hide main menu bar, disable move recent spaces, bind option + space to spotlight search,
+- FiraCode Nerd Font
 
 
 ### All In One
 
 ```
-git clone https://github.com/ajburns651/Mac.git ~/Mac
-bash ~/Mac/installer.shp
+git clone https://github.com/ajburns651/Mac.git ~/Dotfiles
+bash ~/Dotfiles/installer.sh
 ```
 
 
@@ -40,7 +41,6 @@ bash ~/Mac/installer.shp
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install alacritty
 brew install yabai --HEAD
-brew install --cask amethyst
 brew install skhd
 brew install ubersicht
 brew install exa
@@ -49,10 +49,10 @@ brew install python
 
 # Config files
 
-git clone https://github.com/Jean-Tinland/simple-bar $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
 
 
-ln -s -f /usr/local/bin/python3 /usr/local/bin/python
+ln -s ~/Dotfiles/simple-bar ~/$HOME/Library/Application\ Support/Übersicht/widgets/simple-bar #simple-bar config
+ln -s -f /usr/local/bin/python3 /usr/local/bin/python # change default python version
 ```
 
 #### Applications
