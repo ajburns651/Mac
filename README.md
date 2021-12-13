@@ -11,64 +11,40 @@
 #### Tools
 
 - homebrew: a package manager for mac os
-
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-- iterm2: a better mac os terminal
-
-```
-brew install --cask iterm2
-```
-- yabai: a tiling window manager (monterey currently not supported)
-
-```
-open https://github.com/koekeishiya/yabai
-brew install yabai --HEAD
-```
-- amethyst: my main window manager
-
-```
-brew install --cask amethyst
-```
+- alacritty: a better mac os terminal
+- yabai: a tiling window manager
+- skhd: a hotkey dameon
+- ubersicht: a widget program
 - exa: a better ls program
-
-```
-brew install exa
-```
 - vscode: a programming editor
-
-```
-brew install --cask visual-studio-code
-```
 - python: a programming language
 
+##### Installer
 ```
+# Apps
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install alacritty
+open https://github.com/koekeishiya/yabai
+brew install yabai --HEAD
+brew install --cask amethyst
+brew install exa
+brew install --cask visual-studio-code
 brew install python
+
+# Config files
 ln -s -f /usr/local/bin/python3 /usr/local/bin/python
 ```
 
-#### Media
+#### Applications
 
 - spotify: a music provider
-
-```
-brew install spotify
-```
 - todoist: a todolist application
-
-```
-brew install --cask todoist
-```
-
 - discord: a chat service
-
-```
-brew install discord
-```
-
 - steam: a gaming platform
 
 ```
+brew install spotify
+brew install --cask todoist
+brew install discord
 brew install --cask steam
 ```
