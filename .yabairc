@@ -5,11 +5,11 @@
 declare -A gaps
 declare -A color
 
-gaps["top"]="4"
-gaps["bottom"]="24"
-gaps["left"]="4"
-gaps["right"]="4"
-gaps["inner"]="4"
+gaps["top"]="12"
+gaps["bottom"]="12"
+gaps["left"]="12"
+gaps["right"]="12"
+gaps["inner"]="9"
 
 color["focused"]="0xE0808080"
 color["normal"]="0x00010101"
@@ -18,6 +18,7 @@ color["preselect"]="0xE02d74da"
 # ===== Loading Scripting Additions ============
 
 # See: https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#macos-big-sur---automatically-load-scripting-addition-on-startup
+# first time setup: sudo yabai --install-sa and then sudo yabai --load-sa
 sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
@@ -38,7 +39,7 @@ yabai -m config window_topmost              off
 yabai -m config window_opacity              off
 yabai -m config window_shadow               float
 
-yabai -m config window_border               on
+yabai -m config window_border               off
 yabai -m config window_border_width         2
 yabai -m config active_window_border_color  "${color["focused"]}"
 yabai -m config normal_window_border_color  "${color["normal"]}"
@@ -55,14 +56,24 @@ yabai -m config mouse_action1               move
 yabai -m config mouse_action2               resize
 
 # ===== Spaces ==================================
-yabai -m space 1 --label "Main"
-yabai -m space 2 --label "Lap"
-yabai -m space 3 --label "Float"
-yabai -m config --space 3 layout             float
-yabai -m space 4 --label "Tools"
-yabai -m space 5 --label "Media"
-yabai -m space 6 --label "Social"
-yabai -m space 7 --label "Other"
+
+yabai -m space --destroy
+yabai -m space --destroy
+yabai -m space --destroy
+yabai -m space --destroy
+yabai -m space --destroy
+yabai -m space --destroy
+yabai -m space --destroy
+yabai -m space --destroy
+yabai -m space --create
+yabai -m space --create
+yabai -m space --create
+yabai -m space --create
+yabai -m space --create
+yabai -m space --create
+yabai -m space --create
+yabai -m space --create
+yabai -m space 3 --layout float
 
 # ===== Rules ==================================
 
