@@ -1,0 +1,18 @@
+#  NOTE(koekeishiya): A list of all built-in modifier and literal keywords can
+#                     be found at https://github.com/koekeishiya/skhd/issues/1
+
+# open terminal
+lalt + shift - return : open -a /Applications/iTerm.app/Contents/MacOS/iTerm2 ~/
+
+# open browser
+lalt - b : osascript -e 'tell application "Safari" to make new document'
+
+# take a screenshot
+lalt + shift -s : screencapture ~/Pictures/`date +%Y-%m-%d-%H-%M-%S`.png
+
+# open spotify
+lalt - m : open -a spotify
+
+
+
+ 
