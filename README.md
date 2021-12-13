@@ -6,10 +6,20 @@
   * [Tools](#tools)
   * [Media](#media)
 
-### Before Installation
+### MacOS Settings
 
+- hide dock icons: defaults write com.apple.finder CreateDesktop false; killall Finder
 - disable SIP: https://github.com/koekeishiya/yabai
-- System Preferences > auto hide main menu bar, disable move recent spaces, bind option + space to spotlight search, 
+- System Preferences > auto hide main menu bar, disable move recent spaces, bind option + space to spotlight search,
+
+
+### All In One
+
+```
+git clone https://github.com/ajburns651/Mac.git ~/Mac
+bash ~/Mac/installer.shp
+```
+
 
 ### Programs
 
@@ -38,6 +48,10 @@ brew install --cask visual-studio-code
 brew install python
 
 # Config files
+
+git clone https://github.com/Jean-Tinland/simple-bar $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
+
+
 ln -s -f /usr/local/bin/python3 /usr/local/bin/python
 ```
 
