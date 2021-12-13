@@ -2,22 +2,19 @@
 #                     be found at https://github.com/koekeishiya/skhd/issues/1
 
 # Launch Applications
-alt + shift - return : bash alacritty #terminal
+alt + shift - return : Applications/Alacritty.app/Contents/MacOS/alacritty #terminal
 lalt - b : osascript -e 'tell application "Safari" to make new document' #browser
 lalt + shift -s : screencapture ~/Pictures/`date +%Y-%m-%d-%H-%M-%S`.png #screenshot
 lalt - m : open -a spotify #spotify
+alt - w : yabai -m window --close
 
 # Navigation
-alt - h : yabai -m window --focus west
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - l : yabai -m window --focus east
+alt - j : yabai -m window --focus prev
+alt - k : yabai -m window --focus next
 
 # Moving windows
-shift + alt - h : yabai -m window --warp west
-shift + alt - j : yabai -m window --warp south
-shift + alt - k : yabai -m window --warp north
-shift + alt - l : yabai -m window --warp east
+shift + alt - j : yabai -m window --warp prev
+shift + alt - k : yabai -m window --warp next
 
 # Workspaces
 alt - 1 : yabai -m space --focus 1
