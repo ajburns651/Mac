@@ -2,7 +2,7 @@
 #                     be found at https://github.com/koekeishiya/skhd/issues/1
 
 # Launch Applications
-alt + shift - return : Applications/Alacritty.app/Contents/MacOS/alacritty #terminal
+alt + shift - return : /Applications/Alacritty.app/Contents/MacOS/alacritty #terminal
 lalt - b : osascript -e 'tell application "Safari" to make new document' #browser
 lalt + shift -s : screencapture ~/Pictures/`date +%Y-%m-%d-%H-%M-%S`.png #screenshot
 lalt - m : open -a spotify #spotify

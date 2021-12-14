@@ -1,14 +1,7 @@
 # Mac Setup
 ## My custom mac os setup for easy reinstallation
 
-### Table of Contents
-- [Programs](#programs)
-  * [Tools](#tools)
-  * [Media](#media)
 
-### MacOS Settings
-
-- hide dock icons: defaults write com.apple.finder CreateDesktop false; killall Finder
 - disable SIP: https://github.com/koekeishiya/yabai
 - System Preferences > auto hide main menu bar, disable move recent spaces, bind option + space to spotlight search,
 - FiraCode Nerd Font
@@ -20,7 +13,6 @@
 git clone https://github.com/ajburns651/Mac.git ~/Dotfiles
 bash ~/Dotfiles/installer.sh
 ```
-
 
 ### Programs
 
@@ -50,6 +42,8 @@ brew install python
 # Config files
 
 
+ln -s ~/Dotfiles/.alacritty.yml ~/.alacritty.yml
+ln -s ~/Dotfiles/.yabairc ~/.yabairc
 
 ln -s ~/Dotfiles/simple-bar ~/$HOME/Library/Application\ Support/Übersicht/widgets/simple-bar #simple-bar config
 ln -s -f /usr/local/bin/python3 /usr/local/bin/python # change default python version
