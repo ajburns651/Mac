@@ -1,5 +1,5 @@
 # Mac Setup
-## My custom mac os setup for easy reinstallation
+## An unfinished new device guide
 
 
 - disable SIP: https://github.com/koekeishiya/yabai
