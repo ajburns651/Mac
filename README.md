@@ -27,6 +27,7 @@ bash ~/Dotfiles/installer.sh
 - exa: a better ls program
 - vscode: a programming editor
 - python: a programming language
+- codeart: my favorite nvim installation
 
 ```
 # Apps
